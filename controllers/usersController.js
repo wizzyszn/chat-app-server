@@ -131,7 +131,7 @@ module.exports.resetPassword = async(req,res) =>{
         subject : "Password reset",
         text: `You are receiving this because you have requested the reset of the password for your account.
         Please click on the following link, or paste this into your browser to complete the process:
-        http://localhost:3000/confirm-reset/${resetToken}
+        https://chat-app-client-gamma-two.vercel.app/confirm-reset/${resetToken}
         If you did not intiate this request, please ignore this email and your password will remain unchanged.`
        })
        return res.status(200).json({message : "Password reset link has been sent to the Email"})
